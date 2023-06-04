@@ -1,0 +1,326 @@
+
+:root{
+    --mainColor: #ff206e
+}
+
+
+.setting{
+  width: 20%;
+  height: 180px;
+  /* background-color: #f1f1f1; */
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 32345433;
+  display: flex;
+  align-items: start;
+}
+.setting-inner{
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(9, 190, 245); */
+
+}
+.box{
+  width:50px;
+  height: 50px;cursor: pointer;
+}
+.boxbg{
+  width: 60px;
+  height: 60px;
+}
+ .setting .icon{
+  width: 20%;
+  background-color:darkgray;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+.landing{
+display: flex;
+align-items: center;
+justify-content: center;
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background-color: blueviolet;
+ z-index: 444444444;
+}
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar{
+  transition : background-color 2;
+}
+
+
+#home{ background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.nav-link{color: white;
+         }
+.navbar-nav .nav-link.active{color: var(--mainColor);}
+
+.navbar-brand{color: white;}
+
+.nav-link:hover{color: var(--mainColor);}
+.nav-link{
+    position: relative;
+    padding-bottom: 0;
+}
+.nav-link::after{
+ content:"";
+    width:0%;
+    height:2px;
+   background-color: var(--mainColor);
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    transition: width 2s;
+}
+.nav-link:hover::after{
+    width:50%;
+}
+.item h1 {font-size: 3rem;
+      }
+      .item a{color: var(--mainColor);}
+      .meme{width:40px;
+        height:60px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 20px;
+        border: 1px white solid;
+        position: relative;
+      }
+      .meme::after{
+       content: "";
+       width: 10px;
+       height: 10px;
+       border-radius: 50%;
+        background-color: var(--mainColor);
+        position: absolute;
+        top:0%;
+        left:50%;
+        transform: translatex(-50%);
+   
+        animation: move 1.5s infinite;}
+
+        @keyframes move{
+            0%{
+                opacity: 1;
+                top:10px;
+            }
+            
+            
+            100%{  top:70%;
+                   opacity:0 ;   }
+        
+            }
+            .icons i{width:40px;
+                     height:40px;
+                    display: flex;
+                    padding: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    transition: border 1s;
+            }
+            .icons i:hover{border-color: var(--mainColor) !important ;}
+            .about-content h2{
+
+                  font-size: 3rem;
+                  color:rgb(204, 204, 204);
+
+            }
+           .about-content h3{
+
+                      font: size 2rem; 
+                             }
+         .p-letter  {
+            position: relative;
+            padding-bottom: 5px;
+         }
+
+        .p-letter::after{
+                content: "";
+                width:5%;
+                height: 2px;
+                background-color: var(--mainColor);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition:  width 2s;
+
+                }
+              .about-item:hover .p-letter::after{
+                      
+                width: 15%;
+
+
+              }  
+              .carousel-indicators [data-bs-target]{
+
+                         width: 10px;
+                         height: 10px;
+                         border-radius: 50%;
+                         background-color: var(--mainColor);
+
+              }
+
+              .srvice-item{
+                overflow: hidden;}
+
+              .srvice-item{
+                overflow: hidden;
+              }
+
+              .srvice-item .layer{
+
+                        position: absolute;
+                        opacity: 0;
+                        top:0;
+                        bottom: 120%;
+                        left: 10;
+                        right: 10;
+                        background-color: #ffffff9d;
+                        transition:  all 1s;
+
+              }
+              .srvice-item:hover .layer {
+                bottom: 10px;
+                opacity: 1;
+             
+              }
+              .srvice-item img{
+                transition:  filter 1s;
+              }
+              .srvice-item:hover img {
+                filter: blur(10px);
+              }
+
+
+
+
+
+
+
+              
